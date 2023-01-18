@@ -1,5 +1,6 @@
 *{
-    margin: 1% 2%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     background-color: #c5cad7;
 }
@@ -9,22 +10,30 @@
     font-size: 30px;
     margin-bottom: 30px;
     color: rgb(16, 7, 12);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+img{
+    width: 70%;
+    padding-top: 1em;
+}
+
 #users{
-    
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    /* max-width: 90%; */
+    width: 80%;
 }
 .user{
-    width: 180px;
-    height: 50vh;
+    min-width: fit-content;
+    width: 20% ;
+    /* height: fit-content; */
     text-align: left;
-    padding: 1rem;
+    padding: 1.5em;
+    margin-bottom: 32px;
     box-shadow: 0 0 4px 3px rgb(16, 7, 12);
-    margin: 10px;
+    margin: 10%;
     color: rgb(16, 7, 12);
     font-size: 14px;
     font-weight: bold;
@@ -33,25 +42,32 @@
     
 
  } 
- img{
+ /* img{
     width: 120px;
     height: 25vh;
     padding-bottom: 20px;
- }
+ } */
  /* .name{
     width: 100% ;
     
     margin-top: 0;
  } */
- /* Tablet  */
-@media screen and (max-width: 768px){
-    .user{
-        width: 30%;
+ /* desktop */
+ /* @media screen and (max-width: 1024) {
+    #users{
+        width: 80%;
     }
-}
+    
+ } */
+ /* Tablet  */
+/* @media screen and (max-width: 768px){
+    .user{
+        width: 44%;
+    }
+} */
 /* Mobile  */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .user{
         width: 80%;
     }
-}
+} */
