@@ -12,12 +12,12 @@ fetch("https://dummyjson.com/users")
         const newUser = document.getElementById("users");
         // const newClass = document.querySelector()
         const userData = document.createElement("div");
-        userData.innerHTML = `<div class="user">
+        userData.className = "user";
+        userData.innerHTML = `
 <h1 class="name">${user.firstName} ${user.lastName}</h1>
 <img src="${user.image}" alt="img">
 <p class="gender">${user.gender}</p>
-<p class="username">${user.username}</p>
-</div>`;
+<p class="username">${user.username}</p>`;
         // const newContent= document.importNode(newClass)
         newUser.appendChild(userData);
       }
